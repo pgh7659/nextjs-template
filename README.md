@@ -1,34 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Template
 
-## Getting Started
+## Folder Structure
 
-First, run the development server:
+```
+├─pages
+│  ├─ url1
+│  │   └─ [...parmas.tsx]
+│  ├─ url2
+│  │   └─ [...parmas.tsx]
+│  └─ ...
+│
+├─components
+│  ├─ common
+│  └─ ...
+│
+├─public
+│  ├─ fonts
+│  ├─ images
+│  └─ ...
+│
+└─styles
+   ├─ global_style.ts
+   ├─ theme.ts
+   └─ ...
 
-```bash
-npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 현재 설정
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+1. **react.js**
+2. **typescript**
+3. **next.js**
+4. **styled-components & styled-reset**
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+---
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## 추가 필요 설정
 
-## Learn More
+> 추가 되어야 할 설정들 있으면, 추가해주세요.
 
-To learn more about Next.js, take a look at the following resources:
+1. react-query
+2. recoil or redux + redux middlesware
+3. prettier 설정
+4. eslint 설정
+5. husky 설치 및 설정
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 참고 \_app.tsx \_document.tsx
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. \_app.tsx: https://nextjs.org/docs/advanced-features/custom-app
+2. \_document.tsx: https://nextjs.org/docs/advanced-features/custom-document
